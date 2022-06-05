@@ -1,0 +1,128 @@
+:root {
+  --dark-bg-color: #e1e1db;
+  --light-text-color: #e8e9fa;
+  --title-color: #262625;
+  --text-color: #2d2d2c;
+  --link-color: #357fa5;
+  --border-color: #3a3a3875;
+  --menu-bg-color: #3b2e2a;
+  --hover-color: #e69f67;
+}
+body {
+  background-color: var(--dark-bg-color);
+  line-height: 2.2rem;
+}
+body p {
+  color: var(--text-color);
+}
+body h2 {
+  color: var(--title-color);
+}
+code {
+  background-color: #f6f7f6;
+  color: #6e6b5e;
+  padding: 5px;
+  border-radius: 6px;
+}
+.main {
+  max-width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  margin: auto;
+  gap: 10px;
+}
+
+.makale {
+  grid-column: 1 / 10;
+  grid-row: 1 / 12;
+}
+.sag-menu {
+  grid-column: 10 / 13;
+  margin: auto;
+}
+.breadcrumb {
+  grid-column: 1 / 13;
+  grid-row: 12 / 13;
+}
+.nav li {
+  list-style-type: none;
+  margin: 5px 0px 5px 0px;
+}
+.nav a {
+  padding: 5px 5px 5px 5px;
+  margin: 5px 0px 5px 0px;
+  border-radius: 4px;
+  background-color: var(--dark-bg-color);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.nav a:hover {
+  color: var(--hover-color);
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: auto;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  height: fit-content;
+  background-color: var(--menu-bg-color);
+}
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nav ul li:first-child {
+  margin-top: 10px;
+}
+.nav ul li {
+  padding: 5px 5px 5px 5px;
+  margin: 5px 0px 5px 0px;
+  border-radius: 4px;
+  background-color: var(--dark-bg-color);
+}
+.nav ul li a {
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.blog-featured {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.article-info {
+  padding: 5px;
+  border-radius: 12px;
+}
+/*Ayrıntılar yazısı*/
+.article-info dt {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*Ayrıntılar*/
+.article-info dd {
+  font-size: 18px;
+}
+.items-leading,
+.item-page {
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.items-leading h2 {
+  font-size: 32px;
+}
+.items-leading,
+.item-page p {
+  font-size: 20px;
+}

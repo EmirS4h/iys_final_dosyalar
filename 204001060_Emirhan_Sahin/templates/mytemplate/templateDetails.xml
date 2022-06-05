@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.10" type="template">
+	<name>mytemplate</name>
+	<creationDate>01-06-2022</creationDate>
+	<author>Emirhan Sahin</author>
+	<authorEmail>sahtemain@mail.com</authorEmail>
+	<authorUrl>http://www.example.com</authorUrl>
+	<copyright>Emirhan 2022</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0</version>
+	<description>My Project Template</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+        <folder>js</folder>
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+	</positions>
+</extension>
